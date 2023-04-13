@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DehBiju</title>
+    <link rel="stylesheet" rel="preload" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/loader.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
+    <main class="hiden">
+    <nav>
+        <div id="hamburguer">
+            <div class="linha" id="linha1"></div>
+            <div class="linha" id="linha2"></div>
+            <div class="linha" id="linha3"></div>
+        </div>
+        <ul>
+            <li><a href="#home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a></li>
+            <li><a href="#secao-catalogo">
+                <i class="fa-solid fa-list"></i>
+                Catálogo
+            </a></li>
+            
+            <li><a href="#secao-personalizacao">
+                <i class="fa-solid fa-money-bill"></i>
+                Personalização
+            </a></li>
+            
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>DehBiju</h1>
+        <span class="only-large">Personalização de Bijuterias</span>
+        
+        </header>
+
+        <section id="secao-catalogo">
+            <ul>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                          <img src="./assets/images/person2.jpg" alt="imagem do projeto " />
+                        </div>
+                        <div class="card-text">
+                            <h2>Personalização</h2>
+                            <h3>Anéis,Pingentes,Placas Especiais</h3>
+                            <p> Mais Leveza, mais modernidade e muito mais beleza</p>
+                            <a href="#" class="botao">saiba mais</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                          <img src="./assets/images/promoçao.jpg" alt="imagem do projeto " />
+                        </div>
+                        <div class="card-text">
+                            <h2>Promoções</h2>
+                            <h3>Aproveite nossas Ofertas!</h3>
+                            <p>Diversas personalizações com descontos</p>
+                            <a href="#" class="botao"> saiba mais</a>
+                        </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                          <img src="./assets/images/colarperson.jpg" alt="imagem do projeto " />
+                        </div>
+                        <div class="card-text">
+                            <h2>Coleções</h2>
+                            <h3>Coleção In Love, Fun Collection, Coleção Elegance</h3>
+                            <p></p>
+                            <a href="#" class="botao"> saiba mais</a>
+                        </div>
+                </li>
+            </ul>
+        </section>
+       
+    <section id="secao-personalizacao">
+        <form action="#">
+            <h3>Personalização</h3>
+            <label for="qtde">Qtde. de Letras</label>
+            <input type="number" id="qtde" min="1" value="1">
+            <label for="js">Anel</label>
+            <input type="checkbox" id="js">
+            <label for="js1">Pingentes</label>
+            <input type="checkbox" id="js1">
+            <label for="js2">Placas Especiais</label>
+            <input type="checkbox" id="js2">
+            <label for="layout">Personalização Especial?</label>
+            <div class="input-group">
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="layout_sim">sim, preciso</label>
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="layout_nao">nenhuma Personalização</label>
+            </div>
+            <label for="prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
+            <output>R$ 0,00</output>
+            <a href="#" class="botao"> Enviar</a>
+        </form>
+    </section>
+</main>
+</body>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/menu.js"></script>
+</html>
